@@ -2,12 +2,38 @@
 <html lang="en">
 
 <head>
-  <!--  Meta  -->
   <meta charset="UTF-8" />
+  <style>
+    html {
+      height: 100%;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+
+    #joeysDreams {
+      height: auto;
+      width: 100vw;
+    }
+
+    @media (orientation: landscape) {
+      body {
+        flex-direction: column;
+      }
+
+      #joeysDreams {
+        height: 100vh;
+        width: auto;
+      }
+    }
+  </style>
 </head>
 
-<body style="display: flex;">
-  <img src="assets/images/joeys-dreams.png" style="height: 100vh; margin: 0 auto;">
+<body>
+  <img id="joeysDreams" src="assets/images/joeys-dreams.png">
 </body>
 
 </html>
